@@ -26,7 +26,9 @@
             margin-bottom: 16px;
         }
         small {
-            margin-left: 16px;
+            color: rgb(108, 108, 108);
+            margin-left: 22px;
+            display: block;
         }
         bold {
             font-weight: bold;
@@ -39,6 +41,22 @@
             padding-inline: 8px;
             font-size: 12px;
             margin-left: 8px;
+            display: inline;
+        }
+        li a {
+            display: inline-block;
+            margin-bottom: 8px;
+        }
+        .project {
+            margin: 16px 0 16px 16px;
+        }
+        .first {
+            margin-left: 22px;
+        }
+        @media only screen and (max-device-width : 667px) {
+            body,h1 {
+                width: 85%;
+            }
         }
     </style>
 </head>
@@ -59,11 +77,11 @@
         <p>自認英文能力ok、也具有遇到問題時找資料自己解決問題的能力（我不需要手把手的帶領），但「缺乏對技術的理解/想像，以及討論交流」是最大的問題，所以我決定申請 WeHelp ，想離開只會寫靜態網頁的新手村，轉職成真正的軟體工程師。</p>
         <hr>
         <p>以下是我閒暇時自主開發的小作品，都是為了用來解決我自己生活中會遇到的問題。</p>
-        <li><a href="https://lilmp.github.io/pace42.195" target="_blank">2021台北馬配速模擬計算機+配速手環</a><small>使用者輸入目標完賽時間，可幫配速並列印配速手環</small><small class="tag">html</small><small class="tag">css</small><small class="tag">javascript</small></li>
-        <li><a href="https://lilmp.github.io/paceponpon" target="_blank">Pace朋朋: 你的配速換算好朋友</a><small>跑者常用配速單位轉換工具</small><small class="tag">html</small><small class="tag">css</small><small class="tag">javascript</small></li>
-        <li><a href="https://line.me/R/ti/p/@941asgao" target="_blank">imgur網址產生器: 圖片給我，網址給你</a><small>line機器人的嘗試開發</small><small class="tag">python</small><small class="tag">heroku</small><small class="tag">linebot</small></li>    
+        <li class="project"><a href="https://lilmp.github.io/pace42.195" target="_blank">2021台北馬配速模擬計算機+配速手環</a><small>使用者輸入目標完賽時間，列出分段配速並製作配速手環</small><small class="tag first">html</small><small class="tag">css</small><small class="tag">javascript</small></li>
+        <li class="project"><a href="https://lilmp.github.io/paceponpon" target="_blank">Pace朋朋: 你的配速換算好朋友</a><small>跑者常用的配速單位轉換工具</small><small class="tag first">html</small><small class="tag">css</small><small class="tag">javascript</small></li>
+        <li class="project"><a href="https://line.me/R/ti/p/@941asgao" target="_blank">imgur網址產生器: 圖片給我，網址給你</a><small>line機器人串imgur圖床服務的開發嘗試</small><small class="tag first">python</small><small class="tag">heroku</small><small class="tag">linebot</small></li>    
         <p>另外也有一個自己架設的部落格</p>
-        <li><a href="https://lilmp.com" target="_blank">小M平碎碎念</a><small>使用markdown語法寫作，並有自己的網域</small><small class="tag">hugo</small><small class="tag">netlify</small><small class="tag">github</small></li>
+        <li class="project"><a href="https://lilmp.com" target="_blank">小M平碎碎念</a><small>使用markdown語法寫作，並有自己的網域</small><small class="tag first">hugo</small><small class="tag">netlify</small><small class="tag">github</small></li>
 
     </div>
     <div class="box">
